@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optimal-truss"
+version = "0.1.0"
+description = "Reproducible planar truss analysis, constrained geometry optimization, and report figures."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.12,<2",
+  "matplotlib>=3.8,<4",
+  "pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+truss = "optimal_truss.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["optimal_truss*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

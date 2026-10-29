@@ -1,0 +1,106 @@
+{
+  "algorithm": "scipy.optimize.differential_evolution",
+  "buckling_law": {
+    "coefficient": 3391.349,
+    "exponent": 2.012,
+    "uncertainty_oz": 1.52
+  },
+  "constraints": {
+    "span_min": 30.0,
+    "span_max": 33.0,
+    "member_min": 8.5,
+    "member_max": 14.0,
+    "load_height_min": 0.5,
+    "load_height_max": 1.5,
+    "max_total_length": 120.0,
+    "stock_lengths": [
+      48.0,
+      48.0,
+      24.0
+    ],
+    "min_load": 30.0,
+    "kerf_in": 0.0
+  },
+  "objective": "load",
+  "seed": 43,
+  "generations_requested": 150,
+  "generations_completed": 150,
+  "population_multiplier": 12,
+  "population_size": 132,
+  "evaluations": 19933,
+  "solver_nfev": 19932,
+  "feasible_evaluations": 7317,
+  "elapsed_seconds": 8.451816416112706,
+  "converged": false,
+  "stop_reason": "generation_budget_exhausted",
+  "solver_message": "Maximum number of iterations has been exceeded.",
+  "initial_objective_value": 36.66881206084405,
+  "best_objective_value": 61.83375919846987,
+  "parameter_bounds": [
+    {
+      "name": "support_span_in",
+      "lower": 30.0,
+      "upper": 33.0
+    },
+    {
+      "name": "joint_2_x_fraction",
+      "lower": 0.0,
+      "upper": 1.0
+    },
+    {
+      "name": "joint_2_height_in",
+      "lower": 0.5,
+      "upper": 1.5
+    },
+    {
+      "name": "joint_3_x_fraction",
+      "lower": 0.0,
+      "upper": 1.0
+    },
+    {
+      "name": "joint_3_height_in",
+      "lower": 0.0,
+      "upper": 14.0
+    },
+    {
+      "name": "joint_5_x_fraction",
+      "lower": 0.0,
+      "upper": 1.0
+    },
+    {
+      "name": "joint_5_height_in",
+      "lower": 0.0,
+      "upper": 14.0
+    },
+    {
+      "name": "joint_6_x_fraction",
+      "lower": 0.0,
+      "upper": 1.0
+    },
+    {
+      "name": "joint_6_height_in",
+      "lower": 0.0,
+      "upper": 28.0
+    },
+    {
+      "name": "joint_7_x_fraction",
+      "lower": 0.0,
+      "upper": 1.0
+    },
+    {
+      "name": "joint_7_height_in",
+      "lower": 0.0,
+      "upper": 14.0
+    }
+  ],
+  "scope": "Fixed connectivity and designated support/load joints; geometry only. All joints lie between the supports. Best feasible design found, not a proven global optimum.",
+  "coordinate_frame": "Candidate pin at (0, 0), roller to the right; input may be reflected",
+  "initialization": "75% local perturbations; 25% uniform domain; includes baseline",
+  "environment": {
+    "python": "3.12.2",
+    "numpy": "1.26.4",
+    "scipy": "1.12.0",
+    "matplotlib": "3.8.3",
+    "pillow": "12.3.0"
+  }
+}

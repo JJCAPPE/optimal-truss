@@ -1,0 +1,13 @@
+# Original course materials and private report content stay local.
+/*.pdf
+/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+outputs/
+tmp/
+.DS_Store

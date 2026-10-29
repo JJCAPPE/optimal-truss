@@ -1,0 +1,7 @@
+# Direct dependency versions used for the checked example run (Python 3.12).
+# Install with: python -m pip install -e '.[test]' -c requirements-tested.txt
+numpy==1.26.4
+scipy==1.12.0
+matplotlib==3.8.3
+pillow==12.3.0
+pytest==9.0.3
